@@ -27,7 +27,7 @@
         <maven.compiler.source>14</maven.compiler.source>
         <maven.compiler.target>14</maven.compiler.target>
 
-        <guava.version>29.0-jre</guava.version>
+        <guava.version>30.0-jre</guava.version>
     </properties>
 
 
