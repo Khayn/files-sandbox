@@ -1,4 +1,4 @@
-package pl.khayn.zabawy.files;
+package pl.khayn.sandbox.files;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -39,7 +39,7 @@ public class FilesSandbox {
 
 
 		System.out.println(FilesSandbox.getLines());
-		System.out.println(FilesSandbox.getLines().get().stream().filter(l -> l.contains("dupa")).collect(Collectors.toList()));
+		System.out.println(FilesSandbox.getLines().get().stream().filter(l -> l.contains("bubo")).collect(Collectors.toList()));
 
 		FilesSandbox.readExcelFile();
 	}
@@ -55,7 +55,7 @@ public class FilesSandbox {
 			while (iterator.hasNext()) {
 				Cell next = iterator.next();
 
-				switch (next.getCellTypeEnum()) {
+				switch (next.getCellType()) {
 					case STRING:
 						System.out.println(next.getStringCellValue());
 						break;
